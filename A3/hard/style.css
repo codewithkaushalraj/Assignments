@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .left {
+    display: flex;
+    gap: 8px;
+}
+
+.left h1 {
+    font-size: 45px;
+}
+
+.left p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.mid {
+    display: flex;
+    gap: 20px;
+
+}
+
+button {
+    font-size: 22px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    transition: all linear 0.1s;
+}
+button:hover{
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: aqua;
+    border-radius: 40px;
+    border: 5px solid white;
+    opacity: 0.9;
+}
+i:hover{
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: aqua;
+    border-radius: 40px;
+    border: 5px solid white;
+    opacity: 0.9;
+}
+
+/* button:hover {
+    cursor: pointer;
+    border-bottom: 4px solid rgb(4, 255, 255);
+} */
+
+nav .right button {
+    border: 2px solid rgb(4, 255, 255);
+    border-radius: 40px;
+}
+
+.page1 {
+    height: calc(100%-100px);
+    width: 100%;
+    /* background-color: royalblue; */
+    background-color: rgb(16, 16, 16);
+}
+
+.page1 .top {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 60px;
+}
+
+.page1 img {
+    height: 500px;
+    width: auto;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+
+.page1 .top .left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page1 .left h1 {
+    font-size: 100px;
+}
+
+.page1 .left h1 span {
+    color: aqua;
+}
+
+.page1 .left .btm {
+    margin: 30px 0px;
+    display: flex;
+    gap: 25px;
+}
+
+.page1 .left .btm button {
+    border-radius: 40px;
+    border: 2px solid aqua;
+}
+
+.page1 .left .btm button:nth-child(1) {
+    background: linear-gradient(90deg, aqua, rgb(23, 2, 2), aqua);
+}
+
+.page1 .left .btm button:nth-child(2) {
+    background: linear-gradient(90deg, black, aqua, black);
+}
+
+.page1 .right {
+    height: 500px;
+    width: 300px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page1 .right .box {
+    display: flex;
+}
+
+.page1 .right .box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page1 .right .box i {
+    font-size: 80px;
+}
+
+.page1 .right .box p {
+    font-size: 25px;
+}
+
+.page1 .bottom {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: purple; */
+    background-color: rgb(39, 38, 38);
+    padding: 3%;
+    border: 2px solid white;
+    position: relative;
+    z-index: 5;
+}
+
+.page1 .bottom .box {
+    height: 100%;
+    width: 15%;
+    border: 2px solid white;
+    /* background-color: powderblue; */
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 4;
+
+}
+
+.page1 .bottom .box h1 {
+    font-size: 60px;
+    color: aqua;
+}
+
+.page1 .bottom .l {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    height: 40vh;
+    width: 60vh;
+    transform: translate(-50%, -50%);
+}
+
+.page1 .bottom .r {
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    height: 30vh;
+    width: 40vh;
+    transform: translate(-50%, -50%);
+}
+
+.page2 {
+    height: 100%;
+    width: 100%;
+}
+
+.page2 .part1 {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.page2 .part2 {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+}
+
+.page2 .part2 .card {
+    height: 100%;
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.page2 .part2 .card p {
+    font-size: 25px;
+}
+
+.page2 .part2 .card img {
+    height: 50%;
+    width: 100%;
+}
+
+.page2 .part2 .card .end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2 .part2 .card .end .st i {
+    font-size: 30px;
+}
+
+.page2 .part2 .card .end i {
+    font-size: 30px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+}
+
+.page2 .part2 .card h1 {
+    font-size: 25px;
+    position: absolute;
+    left: 8%;
+    top: 6%;
+    color: crimson;
+    font-weight: 900;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid aqua;
+
+}
+
+.page2 .part2 .card h2 {
+    font-size: 30px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    color: rgb(255, 104, 255);
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+
+.page2 .part3 {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+
+
+.page2 .part3 .card {
+    height: 100%;
+    width: 15%;
+    /* background-color: orchid; */
+    border: 2px solid white;
+    border-radius: 30px;
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.page2 .part3 .card p {
+    font-size: 15px;
+}
+
+.page2 .part3 .card p span {
+    font-size: 35px;
+}
+
+.page2 .part4 {
+    height: 35%;
+    width: 100%;
+    position: relative;
+    padding: 5px;
+    /* background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover; */
+}
+.page2 .part4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.page2 .part4 h1{
+    color: white;
+    font-size: 40px;
+    z-index: 10;
+}
+.page2 .part4 .card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 50px;
+}
+.page2 .part4 .card .box1{
+    height: 100%;
+    width: 50%;
+    /* background-color: royalblue; */
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.page2 .part4 .card .box1 h1{
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.page2 .part4 .card .box1 button{
+    padding: 10px 20px;
+    height: 30%;
+    width: 50%;
+    background: linear-gradient(90deg,black,black,aqua);
+    border-radius: 20px;
+    font-weight: 600;
+}
+.page2 .part4 .card .box2{
+    height: 100%;
+    width: 25%;
+    /* background-color: chartreuse; */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 25px;
+    gap: 5px;
+
+}
+.page2 .part4 .card .box2 .heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.page2 .part4 .card .box2 .icon{
+    font-size: 40px;
+}
+.page2 .part4 .card .box3{
+    height: 100%;
+    width: 25%;
+    /* background-color: orchid; */
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+} 
